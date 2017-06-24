@@ -62,11 +62,7 @@ organize='move' # 'copy' or 'move' all files into subdirectories organised by ex
 ## END Configs
 
 
-
-
-
-
-title="Batch PDF Image Extract"
+title="Batch PDF Image Extractor"
 
 
 ###
@@ -161,7 +157,9 @@ title="Batch PDF Image Extract"
 #
 ###
 
-echo 'Press any key to continue. All PDF files in the current directory will be processed.'
+echo 'All PDF files in the current directory will be processed.'
+echo 'If the extracted images are not as expected use a program like GIMP to do it manually.'
+echo 'Press any key to continue.'
 echo 'Press Ctrl+C to cancel.'
 read something
 

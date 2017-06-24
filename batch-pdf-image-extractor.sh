@@ -3,14 +3,14 @@ clear
 
 ###
 #
-#	Batch PDF Image Extractor 1.0.0
+#	Batch PDF Image Extractor 1.0.1
 #
 #	Lead Author: Lee Hodson
 #	Donate: paypal.me/vr51
-#	Website: https://journalxtra.com/linux/scripts-linux/batch-pdf-image-extractor/
+#	Website: https://journalxtra.com
 #	First Written: 18th Oct. 2015
 #	First Release: 2nd Nov. 2015
-#	This Release: 14th May. 2016
+#	This Release: 24th Jun. 2017
 #
 #	Copyright 2016 Lee Hodson <https://journalxtra.com>
 #	License: GPL3
@@ -21,12 +21,12 @@ clear
 #
 #	TO RUN:
 #
-#	- Ensure the script is executable. Either right-click the file to edit the properties or use 'chmod +x batch-pdf-image-extractor.sh'
-#	- Run with 'bash batch-pdf-image-extractor.sh' or try './batch-pdf-image-extractor.sh'
+#	- Ensure the script is executable.
+#	- Command line: ./batch-pdf-image-extractor.sh
 #	- File browser: click batch-pdf-image-extractor.sh
 #
-#	Use Batch PDF Image Extractor to extract images from a bulk lot of PDF files or from a single PDF file
-#	Place this script file in the same directory as the PDF files you need to process then either click the script file or run the script. Clicking the script file will open a terminal to run the program.
+#	Use Batch PDF Image Extractor to extract images from a bulk lot of PDF files
+#	Place this script file in the same directory as the PDF files you need to process then either click the script file or run the script through a terminal. Clicking the script file will open a terminal to run the program.
 #	Edit the configs if you wish to. The default settings should be fine.
 #
 #	REQUIREMENTS
@@ -37,7 +37,7 @@ clear
 #	WHAT TO EXPECT
 #
 #
-#	Batch PDF Image Extracter will use pdfimage to extract images from all PDF files stored in the same directory as this script. Extracted images are converted to any specified image format. Images are extracted and processed as soon as the script is executed.
+#	Batch PDF Image Extractor will use pdfimage to extract images from all PDF files stored in the same directory as this script. Extracted images are converted to any specified image format. Images are extracted and processed as soon as the script is executed.
 #
 #
 #	CONFIGS
@@ -55,7 +55,7 @@ clear
 #
 ##
 
-extensions=( tiff tif pmb ppm ) # List the output image extensions that should be converted to a different format
+extensions=( tiff tif pmb ppm ccitt params ) # List the output image extensions that should be converted to a different format
 format='png' # State the format images with $extensions should be converted to.
 organize='move' # 'copy' or 'move' all files into subdirectories organised by extension type. Leave empty for no organization.
 
@@ -66,7 +66,7 @@ organize='move' # 'copy' or 'move' all files into subdirectories organised by ex
 
 
 
-title="Batch PDF Image Extractor"
+title="Batch PDF Image Extract"
 
 
 ###
